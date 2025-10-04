@@ -12,21 +12,15 @@
 }
 
 #hero .accent {
-    font-family: 'Kite One';
+    font-size: 3.5rem;
+    font-family: 'New Rocker';
     color: #00bfff;
+
 }
 
 #hero p {
     max-width: 600px;
     color: #c2bdbd;
-}
-
-#profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #00bfff;
 }
 
 .btn {
@@ -45,8 +39,20 @@
 
 #about {
     margin-top: 3rem;
-    max-width: 700px;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+p a{
+    text-decoration: none;
+    color: #00bfff;
+}
+#hero .accent::after {
+    content: "⦿ ◆ ⦿";
+    display: block;
+    font-size: 1rem;
+    color: #008ecc;
+    margin-top: 0.5rem;
+    letter-spacing: 8px;
 }

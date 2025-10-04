@@ -18,16 +18,16 @@ body {
 
 header {
   width: 100%;
-  background-color: #1e1e1e;
+  height: 10vh;
+  background-color: #16213E;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 7vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  box-shadow: #00bfff 4px 1px 1px;
+  box-shadow: #317AC1 4px 1px 1px;
 }
 
 #menu ul {
@@ -38,9 +38,11 @@ header {
   margin: 0;
 }
 #menu li{
-  padding: 0.5rem;
-  background-color: #0f3d52;
-  box-shadow: 3px 3px #317AC1;
+  width: 13vw;
+  padding: 10px 0px;
+  background-color: #1A1A2E;
+  box-shadow: 5px 5px #317AC1;
+  text-align: center;
 }
 #menu a {
   color: white;
@@ -51,7 +53,7 @@ header {
 }
 
 #menu a:hover {
-  color: #317AC1;
+  color: #00bfff;
 }
 
 main {
@@ -59,5 +61,6 @@ main {
   padding: 2rem;
   text-align: center;
 }
+
 
 
