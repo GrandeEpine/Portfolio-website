@@ -9,10 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/src/styles/style.css"/>
   <link rel="stylesheet" href="/src/styles/styleIndex.css"/>
+  <link rel="stylesheet" href="/src/styles/styleProjects.css"/>
   <title>Mon Portfolio - Acceuil</title>
 </head>
 <body>
-<header>
+<header id="header">
   <nav id="menu">
     <ul>
       <li><a href="index.html">Accueil</a></li>
@@ -31,15 +32,97 @@
   </section>
 
   <section id="about">
-    <h2>À propos de moi</h2>
+    <h1>À propos de moi</h1>
     <p>
       Je suis un étudiant / développeur intéressé par le développement logiciel,
       la visualisation de données et la conception d’algorithmes.
-      Ce portfolio regroupe mes projets, mes compétences et mes outils préférés.
+      Ce portfolio regroupe mes projets, mes compétences et mes outils préférés que j'ai
+      développé lors de mes études ou personnellement.
     </p>
   </section>
+  <h1>Mes créations</h1>
   <section id="projects">
-
+    <div class="projectCard">
+      <div class="projectTitle">
+        <h2>Installation de poste</h2>
+      </div>
+      <div class="projectTimeStatus">
+        <p>BUT1 | Terminé</p>
+      </div>
+      <div class="projectImage">
+        <h3>Aperçu:</h3>
+        <img src="../public/img/SAE_S201.png" alt="Image du projet Installation de poste">
+      </div>
+      <div class="projectDescription">
+        <p>Faire des choix techniques pour préparer et configurer
+          des machines virtuelles sous Linux selon un cahier des charges donné.
+          Créer un fichier tutoriel pour guider l'utilisateur à réaliser l'installation
+          des sessions et les configurer.
+        </p>
+      </div>
+      <div class="projectTechTools">
+        <ul class="techTools">
+          <li>Bash</li>
+          <li>Linux</li>
+        </ul>
+      </div>
+      <div class="projectLink"></div>
+    </div>
+    <div class="projectCard">
+      <div class="projectTitle">
+        <h2>Algorithmes de jeu de plateau</h2>
+      </div>
+      <div class="projectTimeStatus">
+        <p>BUT1 | Terminé</p>
+      </div>
+      <div class="projectImage">
+        <h3>Aperçu:</h3>
+        <img src="../public/img/SAE_S201.png" alt="Image du projet Installation de poste">
+      </div>
+      <div class="projectDescription">
+        <p>Implémentation de fonctionnalités dans un donné pour un jeu de plateau en 2D.
+          Test des implémentations par un script bash donné pour passer à l'implémentation suivante.
+          Création d'IAs suivant des algorithmes et tournoi d'IA avec celle des autres étudiants.
+        </p>
+      </div>
+      <div class="projectTechTools">
+        <ul class="techTools">
+          <li>Java</li>
+          <li>Git</li>
+          <li>bash</li>
+        </ul>
+      </div>
+      <div class="projectLink"></div>
+    </div>
+    <div class="projectCard">
+      <div class="projectTitle">
+        <h2>Visualisation de graphe</h2>
+      </div>
+      <div class="projectTimeStatus">
+        <p>BUT1 | Terminé</p>
+      </div>
+      <div class="projectImage">
+        <h3>Aperçu:</h3>
+        <img src="../public/img/SAE_S201.png" alt="Image du projet Installation de poste">
+      </div>
+      <div class="projectDescription">
+        <p>Implémentation de fonctionnalités de visualisation de différents types de graphe (Non dirigés et dirigés).
+          Création d'algorithmes de graphe tel que: Force directed, et Auto sizing.
+          Application de connaissances théoriques en graphe.
+          Calcul de couts algorithmiques.
+          Approfondissement en P.O.O.
+          Modélisation de la structure du code avec de l'UML.
+        </p>
+      </div>
+      <div class="projectTechTools">
+        <ul class="techTools">
+          <li>Java</li>
+          <li>Git</li>
+          <li>UML</li>
+        </ul>
+      </div>
+      <div class="projectLink"></div>
+    </div>
   </section>
 </main>
 </body>

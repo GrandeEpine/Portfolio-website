@@ -16,7 +16,7 @@ body {
   color: #ffffff;
 }
 
-header {
+#header {
   width: 100%;
   height: 10vh;
   background-color: #16213E;
@@ -27,7 +27,7 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
-  box-shadow: #317AC1 4px 1px 1px;
+  box-shadow: #317AC1 1px 1px 1px;
 }
 
 #menu ul {
