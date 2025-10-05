@@ -62,5 +62,19 @@ main {
   text-align: center;
 }
 
+@media (max-width: 700px) {
+  #menu a{
+    font-size: 10px;
+  }
+  #menu li{
+    width: 15vw;
+  }
+
+}
+@media (max-width: 1100px) {
+  #menu a{
+    font-size: 1rem;
+  }
+}
 
 
