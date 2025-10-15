@@ -59,7 +59,7 @@
     margin: 0 0 .4rem; font-size: .95rem; color: var(--muted);
 }
 .projectImage img {
-    width: 100%; height: 30vh; object-fit: cover;
+    width: 100%; height: 100%; object-fit: cover;
     border-radius: 10px; border: 1px solid var(--border);
     background: #0c1526;
 }
@@ -106,4 +106,91 @@
     text-align: left;
     margin-bottom: 0.5vh;
 }
+/* Bloc projet existant */
+.projectImage {
+    display: grid;
+    gap: .5rem;
+}
+
+/* Carrousel */
+.projectImage .carousel {
+    display: grid;
+    grid-template-rows: auto 36px auto; /* viewport, ligne des boutons, dots */
+    gap: .5rem;
+}
+
+/* Fenêtre visible et piste */
+.projectImage .viewport {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #0c1526;
+    box-shadow: #317AC1 2px 2px 1px;
+}
+
+.projectImage .track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%; /* 1 image = 100% de la largeur visible */
+    /* Empêche la piste de déborder en grid/flex parents */
+    min-width: 100%;
+}
+
+/* Slides */
+.projectImage .track img {
+    display: block;
+    width: 100%;
+    height: 40vh;            /* reste aligné avec vos cartes */
+    object-fit: cover;
+    scroll-snap-align: start;
+    border-radius: 10px;     /* cohérent avec la viewport */
+}
+
+/* Ligne des boutons: centrée sous l'image */
+.projectImage .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
+/* Boutons */
+.projectImage .nav {
+    border: 1px solid var(--border);
+    background: #1A1A2E;
+    color: #cfe6ff;
+    height: 36px; min-width: 36px;
+    padding: 0 .8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: #317AC1 2px 2px 1px;
+    transition: transform .1s ease, border-color .15s ease, color .15s ease;
+}
+.projectImage .nav:hover { border-color: #6a6abb; color: #eafffb; }
+.projectImage .nav:active { transform: scale(.96); }
+.projectImage .nav:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+/* Dots (pagination) sous les boutons) */
+.projectImage .dots {
+    display: flex;
+    justify-content: center;
+    gap: .4rem;
+}
+.projectImage .dots button {
+    width: 8px; height: 8px; border-radius: 999px;
+    border: 0; background: rgba(255,255,255,0.35);
+    box-shadow: #317AC1 1px 1px 0;
+    cursor: pointer;
+}
+.projectImage .dots button[aria-current="true"] { background: var(--primary); }
+
+/* Mobile: réduire la hauteur */
+@media (max-width: 640px) {
+    .projectImage .track img { height: 24vh; }
+}
+
 

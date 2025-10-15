@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/src/styles/style.css"/>
   <link rel="stylesheet" href="/src/styles/styleIndex.css"/>
   <link rel="stylesheet" href="/src/styles/styleProjects.css"/>
+  <script src="./js/main.js"></script>
   <title>Mon Portfolio - Acceuil</title>
 </head>
 <body>
@@ -53,8 +54,19 @@
       </div>
       <div class="projectImage">
         <h3>Aperçu:</h3>
-        <img src="../public/img/installationPoste2.png" alt="Image du projet Installation de poste schema architecture logicielle">
-        <img src="../public/img/installationPoste1.png" alt="Image du projet Installation de poste écran de connexion de la machine">
+        <div class="carousel" data-carousel>
+          <div class="viewport">
+            <div class="track">
+              <img src="../public/img/installationPoste2.png" alt="Schéma d’architecture logicielle">
+              <img src="../public/img/installationPoste1.png" alt="Écran de connexion de la machine">
+            </div>
+          </div>
+          <div class="dots" aria-label="Pagination"></div>
+          <div class="controls">
+            <button class="nav prev" aria-label="Image précédente" data-prev>◁ Précédent</button>
+            <button class="nav next" aria-label="Image suivante" data-next>Suivant ▷</button>
+          </div>
+        </div>
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
@@ -77,10 +89,22 @@
       <div class="projectTimeStatus">
         <p>BUT1 | Terminé</p>
       </div>
+
       <div class="projectImage">
         <h3>Aperçu:</h3>
-        <img src="../public/img/Lowatem1.png" alt="Image du projet Algorithmes de jeu de plateau au niveau 1">
-        <img src="../public/img/Lowatem2.png" alt="Image du projet Algorithmes de jeu de plateau au niveau 10">
+        <div class="carousel" data-carousel>
+          <div class="viewport">
+            <div class="track">
+              <img src="../public/img/Lowatem1.png" alt="Image du projet Algorithmes de jeu de plateau au niveau 1">
+              <img src="../public/img/Lowatem2.png" alt="Image du projet Algorithmes de jeu de plateau au niveau 10">
+            </div>
+          </div>
+          <div class="dots" aria-label="Pagination"></div>
+          <div class="controls">
+            <button class="nav prev" aria-label="Image précédente" data-prev>◁ Précédent</button>
+            <button class="nav next" aria-label="Image suivante" data-next>Suivant ▷</button>
+          </div>
+        </div>
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
@@ -107,9 +131,20 @@
       </div>
       <div class="projectImage">
         <h3>Aperçu:</h3>
-        <img src="../public/img/S2021.png" alt="Image du graphe de base">
-        <img src="../public/img/S2022.png" alt="Image du graphe après redraw (Force directed)">
-        <img src="../public/img/S2023.png" alt="Image du projet apres Auto-sizing">
+        <div class="carousel" data-carousel>
+          <div class="viewport">
+            <div class="track">
+              <img src="../public/img/S2021.png" alt="Image du graphe de base">
+              <img src="../public/img/S2022.png" alt="Image du graphe après redraw (Force directed)">
+              <img src="../public/img/S2023.png" alt="Image du projet apres Auto-sizing">
+            </div>
+          </div>
+          <div class="dots" aria-label="Pagination"></div>
+          <div class="controls">
+            <button class="nav prev" aria-label="Image précédente" data-prev>◁ Précédent</button>
+            <button class="nav next" aria-label="Image suivante" data-next>Suivant ▷</button>
+          </div>
+        </div>
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
@@ -208,8 +243,19 @@
       </div>
       <div class="projectImage">
         <h3>Aperçu:</h3>
-        <img src="../public/img/SPOTIFYAPP1.png" alt="Image 2 du projet Spotify Web App">
-        <img src="../public/img/SPOTIFYAPP2.png" alt="Image 1 du projet Spotify Web App">
+        <div class="carousel" data-carousel>
+          <div class="viewport">
+            <div class="track">
+              <img src="../public/img/SPOTIFYAPP1.png" alt="Image 2 du projet Spotify Web App">
+              <img src="../public/img/SPOTIFYAPP2.png" alt="Image 1 du projet Spotify Web App">
+            </div>
+          </div>
+          <div class="dots" aria-label="Pagination"></div>
+          <div class="controls">
+            <button class="nav prev" aria-label="Image précédente" data-prev>◁ Précédent</button>
+            <button class="nav next" aria-label="Image suivante" data-next>Suivant ▷</button>
+          </div>
+        </div>
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
@@ -233,7 +279,7 @@
       </div>
     </div>
   </section>
-  <h1>Mes créations</h1>
+  <h1>Mes compétences</h1>
   <section id="skills">
     <div class="skillsCard">
 
