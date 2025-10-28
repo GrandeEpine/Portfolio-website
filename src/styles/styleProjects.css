@@ -1,13 +1,12 @@
 #projects {
     background: #16213E;
+    margin-inline: auto;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     gap: clamp(14px, 2vw, 20px);
     border-radius: 1rem;
-}
-/* Section */
-#projects {
+    justify-content: center;
     --bg: #0f1222; --card: #0f1b2d; --ink: #d7e3ff; --muted: #9ab0c9;
     --primary: #00bfff; --border: #317AC1;
     color: var(--ink);

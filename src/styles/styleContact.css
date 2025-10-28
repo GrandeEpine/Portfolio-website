@@ -1,0 +1,40 @@
+.contactList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.contactList li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    background-color: #0f1b2d;
+    box-shadow: #317AC1 6px 6px 1px;
+    border: 1px solid var(--border);
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    padding: 1vh 2vw 1vh 2vw;
+    min-width: 8vw;
+    margin: 3vw;
+}
+.contactList li:hover {
+    transform: translateY(-3px);
+    border-color: #6a6abb;
+    box-shadow: #317AC1 8px 8px 1px ;
+}
+.contactlogo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+
+
+
+
+

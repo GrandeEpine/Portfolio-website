@@ -1,13 +1,9 @@
 /* Carte Compétences */
 .skillsCard {
-    padding: 1rem;
+    background-color: #0f1222;
+    margin: 1rem;
+    padding-bottom: 2rem;
 }
-
-/* Conteneur des listes */
-.skillsContainer {
-    /* rien d'obligatoire ici, mais utile si tu veux isoles les paddings */
-}
-
 /* Liste horizontale des skills */
 .skillsList {
     list-style: none;

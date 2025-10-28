@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./styles/styleSkills.css"/>
   <link rel="stylesheet" href="./styles/styleIndex.css"/>
   <link rel="stylesheet" href="./styles/styleProjects.css"/>
+  <link rel="stylesheet" href="./styles/styleContact.css"/>
   <script src="./js/main.js"></script>
   <title>Mon Portfolio - Acceuil</title>
 </head>
@@ -28,12 +29,12 @@
 
 <main id="main">
   <section id="hero">
-    <h1>Salut, je m'appelle <span class="accent">Timothé Velasco</span></h1>
-    <p>Je suis développeur en 2ᵉ année de BUT informatique à
-      <a href="https://www.iut.u-bordeaux.fr/info/"> l'IUT de Bordeaux</a></p>
+    <h1>Bonjour, je m'appelle <span class="accent">Timothé Velasco</span></h1>
+    <p>Je suis un développeur en 2ᵉ année de BUT informatique à
+      <a href="https://www.iut.u-bordeaux.fr/info/"> l'IUT de Bordeaux</a>.</p>
   </section>
 
-  <section id="about">
+  <section class="about">
     <h1>À propos de moi</h1>
     <p>
       Je suis un étudiant / développeur intéressé par le développement logiciel,
@@ -338,7 +339,7 @@
       <div class="skillsContainer">
         <ul class="skillsList">
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg" />
+            <img src="https://img.icons8.com/?size=100&id=CW2UFvShbHcL&format=png&color=FFFFFF" />
             <h2 class="skillName">Symfony</h2>
           </li>
           <li>
@@ -373,6 +374,58 @@
       </div>
     </div>
   </section>
+  <h1>Comment me contacter ?</h1>
+  <section id="contact">
+    <section class="about">
+      <p>
+        Je suis actuellement à la recherche d'une alternance pour l'année universitaire
+        2026-2027 à partir de septembre. Je suis ouvert à n'importe quelle opportunité,
+        n'hésitez pas à me contacter !
+      </p>
+    </section>
+    <ul class="contactList">
+      <li>
+        <div class="contactCard">
+          <a class="contactLink" onclick="window.open('mailto:timothe.velasco@orange.fr', '_self')" onmouseover="this.style.cursor='pointer'">
+            <img class="contactlogo" src="https://img.icons8.com/?size=100&id=53435&format=png&color=FFFFFF" />
+          </a>
+          <h2 class="contactName">Mail</h2>
+        </div>
+      </li>
+      <li>
+        <div class="contactCard">
+          <a class="contactLink" href="https://linkedin.com/in/timothé-velasco", target="_self">
+            <img class="contactlogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+          </a>
+          <h2 class="contactName">Linkedin</h2>
+        </div>
+      </li>
+      <li>
+        <div class="contactCard">
+          <a class="contactLink" href="https://github.com/GrandeEpine", target="_self">
+            <img class="contactlogo" src="https://img.icons8.com/?size=100&id=16318&format=png&color=FFFFFF" />
+          </a>
+          <h2 class="contactName">GitHub</h2>
+        </div>
+      </li>
+    </ul>
+  </section>
 </main>
+<footer class="footer-min">
+  <p class="f-line1">
+    <span class="f-name">Timothé Velasco</span>
+    <span class="f-sep">•</span>
+    <span class="f-availability">Cherche alternance 2026‑2027</span>
+  </p>
+  <p class="f-line2">
+    © <span id="y"></span> <span class="f-owner">Timothé Velasco</span>
+    <span class="f-sep">•</span>
+    <span class="f-rights">Tous droits réservés</span>
+  </p>
+</footer>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear().toString();
+</script>
+
 </body>
 </html>

@@ -14,6 +14,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   color: #ffffff;
+  background-color: #1A1A2E;
 }
 
 #header {
@@ -63,6 +64,10 @@ main {
   padding: 2rem;
   text-align: center;
 }
+section{
+  margin: 2rem;
+}
+
 
 @media (max-width: 700px) {
   #menu a{
@@ -77,6 +82,57 @@ main {
   #menu a{
     font-size: 1rem;
   }
+}
+
+/* Footer harmonisé sur la DA du header */
+.footer-min{
+  /* même fond que #header */
+  background-color: #16213E;
+  color: #ffffff;
+  margin-top: 56px;
+  padding: 28px 16px 36px;
+  text-align: center;
+
+  /* rappel du trait/relief du header */
+  box-shadow: #317AC1 1px 1px 1px inset;
+  border-top: 1px solid #317AC1;
+}
+
+/* Ligne 1 : cartouche identique aux items du menu */
+.f-line1{
+  margin: 0 0 6px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+
+  padding: 10px 14px;
+  background-color: #1A1A2E;      /* même bloc que #menu li */
+  box-shadow: 5px 5px #317AC1;     /* même ombre décalée */
+  border: 1px solid #317AC1;       /* même bord bleu */
+  border-radius: 0;                 /* items menu sans arrondi */
+  font-size: clamp(1rem, .85rem + .5vw, 1.1rem);
+  letter-spacing: .4px;
+}
+
+/* Ligne 2 : plus discrète, centrée */
+.f-line2{
+  margin: 6px 0 0;
+  color: #c2bdbd;
+  font-size: .95rem;
+}
+
+/* Accents (mêmes teintes que sur le site) */
+.f-name{
+  /* si tu utilises New Rocker pour les titres */
+  font-family: "New Rocker", system-ui, sans-serif;
+  color: #00bfff;
+  letter-spacing: .5px;
+}
+/* Option: réduire le cartouche en mobile */
+@media (max-width: 420px){
+  .footer-min{ padding: 22px 12px 28px; }
+  .f-line1{ padding: 8px 12px; gap: .45rem; box-shadow: 4px 4px #317AC1; }
 }
 
 
