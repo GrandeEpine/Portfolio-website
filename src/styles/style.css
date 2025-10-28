@@ -55,7 +55,9 @@ body {
 #menu a:hover {
   color: #00bfff;
 }
-
+li{
+  list-style: none;
+}
 main {
   margin-top: 10vh;
   padding: 2rem;
