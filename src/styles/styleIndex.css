@@ -1,19 +1,32 @@
 #hero {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 4vh 1vh;
-}
+    display: flex;
+    flex-direction: row;
 
+}
+#profilePicture{
+    width: 10%;
+    height: 15%;
+    padding-right: 4vw;
+}
+#heroText{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #hero h1 {
     font-size: 2rem;
     margin: 1rem 0;
 }
-
-#hero .accent {
-    font-size: 3.5rem;
-    font-family: 'New Rocker';
+#header .accent {
+    text-align: center;
+    margin-right: 5vw;
+}
+.accent {
+    font-size: 3rem;
+    font-family: 'Kumar One';
     color: #00bfff;
 }
 
@@ -55,4 +68,13 @@ p a{
     color: #008ecc;
     margin-top: 0.5rem;
     letter-spacing: 8px;
+}
+@media (max-width: 1000px) {
+    .accent{
+        font-size: 1.5rem;
+    }
+    #header .accent{
+        width: 25%;
+        margin-right: 0;
+    }
 }

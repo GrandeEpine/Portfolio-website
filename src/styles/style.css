@@ -68,7 +68,6 @@ section{
   margin: 2rem;
 }
 
-
 @media (max-width: 700px) {
   #menu a{
     font-size: 10px;
@@ -83,7 +82,20 @@ section{
     font-size: 1rem;
   }
 }
-
+@media (max-width: 1000px) {
+  #menu ul {
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    margin-right: 3vw;
+  }
+  .accent{
+    font-size: 1.5rem;
+  }
+  #header .accent{
+    width: 25%;
+  }
+}
 /* Footer harmonisé sur la DA du header */
 .footer-min{
   /* même fond que #header */
@@ -125,14 +137,18 @@ section{
 /* Accents (mêmes teintes que sur le site) */
 .f-name{
   /* si tu utilises New Rocker pour les titres */
-  font-family: "New Rocker", system-ui, sans-serif;
+  font-family: "Julius Sans One", system-ui, sans-serif;
   color: #00bfff;
   letter-spacing: .5px;
 }
 /* Option: réduire le cartouche en mobile */
-@media (max-width: 420px){
+@media (max-width: 700px){
   .footer-min{ padding: 22px 12px 28px; }
   .f-line1{ padding: 8px 12px; gap: .45rem; box-shadow: 4px 4px #317AC1; }
 }
+#hero { scroll-margin-top: 30vh; }
+#projects   { scroll-margin-top: 20vh; }
+#skills     { scroll-margin-top: 20vh; }
+#contact    { scroll-margin-top: 10vh; }
 
 

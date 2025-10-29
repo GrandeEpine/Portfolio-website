@@ -32,6 +32,9 @@
     height: 44px;
     object-fit: contain;
 }
+.contactName{
+    margin: 0;
+}
 
 
 

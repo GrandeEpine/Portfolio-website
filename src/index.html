@@ -3,8 +3,7 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kite+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Julius+Sans+One&family=Kumar+One&family=Macondo+Swash+Caps&family=New+Rocker&family=Shrikhand&family=Spicy+Rice&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/style.css"/>
@@ -13,25 +12,32 @@
   <link rel="stylesheet" href="./styles/styleProjects.css"/>
   <link rel="stylesheet" href="./styles/styleContact.css"/>
   <script src="./js/main.js"></script>
-  <title>Mon Portfolio - Acceuil</title>
+  <title>Mon Portfolio - Accueil</title>
 </head>
 <body>
 <header id="header">
+  <span class="accent">Timothé Velasco</span>
   <nav id="menu">
     <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="projects.html">Projets</a></li>
-      <li><a href="skills.html">Compétences</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#hero" aria-label="Aller à la section Accueil">Accueil</a></li>
+      <li><a href="#projects" aria-label="Aller à la section Projets">Projets</a></li>
+      <li><a href="#skills" aria-label="Aller à la section Compétences">Compétences</a></li>
+      <li><a href="#contact" aria-label="Aller à la section Contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main id="main">
   <section id="hero">
-    <h1>Bonjour, je m'appelle <span class="accent">Timothé Velasco</span></h1>
-    <p>Je suis un développeur en 2ᵉ année de BUT informatique à
-      <a href="https://www.iut.u-bordeaux.fr/info/"> l'IUT de Bordeaux</a>.</p>
+    <img id="profilePicture" src="../public/img/photo.jpg" alt="Photo de profil"/>
+    <div id="heroText">
+      <div class="hero-row">
+        <h1>Bonjour, je m'appelle <span class="accent">Timothé Velasco</span></h1>
+      </div>
+      <p>Je suis un développeur en 2ᵉ année de BUT informatique à
+        <a href="https://www.iut.u-bordeaux.fr/info/"> l'IUT de Bordeaux</a>.
+      </p>
+    </div>
   </section>
 
   <section class="about">
@@ -45,11 +51,11 @@
   </section>
 
 
-  <h1>Mes créations</h1>
+  <h1 data-text="Mes créations">Mes créations</h1>
   <section id="projects">
     <div class="projectCard">
       <div class="projectTitle">
-        <h2>Installation de poste</h2>
+        <h2>Installation de services réseaux</h2>
       </div>
       <div class="projectTimeStatus">
         <p>BUT1 | Terminé</p>
@@ -59,8 +65,8 @@
         <div class="carousel" data-carousel>
           <div class="viewport">
             <div class="track">
-              <img src="../public/img/installationPoste2.png" alt="Schéma d’architecture logicielle">
-              <img src="../public/img/installationPoste1.png" alt="Écran de connexion de la machine">
+              <img src="../public/img/S2031.png" alt="Structure">
+              <img src="../public/img/S2032.png" alt="Écran de connexion de la machine">
             </div>
           </div>
           <div class="dots" aria-label="Pagination"></div>
@@ -72,14 +78,22 @@
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
-          <li><p>Faire des choix techniques pour préparer et configurer des machines virtuelles sous Linux selon un cahier des charges donné.</p></li>
-          <li><p>Créer un fichier tutoriel pour guider l'utilisateur à réaliser l'installation des sessions et les configurer.</p></li>
+          <li><p>Installation et configuration de services réseaux.</p></li>
+          <li><p>Installation et configuration de clients lourds associés.</p></li>
+          <li><p>Prise en main un environnement virtuel émulant un réseau de machines sous Debian.</p></li>
+          <li><p>Configuration de l’adressage et le routage des machines dans un réseau composé de deux sous-réseaux.</p></li>
+          <li><p>Installation et configuration du serveur de fichiers Nextcloud 2, et des plugins pour ce serveur incluant
+            un système d’édition de documents Onlyoffice 3.</p></li>
+          <li><p>Rédaction d’un tutoriel détaillé en anglais au format Markdown.</p></li>
         </ul>
       </div>
       <div class="projectTechTools">
         <ul class="techTools">
           <li>Bash</li>
           <li>Linux</li>
+          <li>NEmu</li>
+          <li>HTTPS/TLS</li>
+          <li>OpenSSL</li>
         </ul>
       </div>
       <div class="projectLink"></div>
@@ -203,7 +217,7 @@
     </div>
     <div class="projectCard">
       <div class="projectTitle">
-        <h2>Logiciel de visualisation de données.</h2>
+        <h2>Logiciel de visualisation de données</h2>
       </div>
       <div class="projectTimeStatus">
         <p>BUT1 | Terminé</p>
@@ -281,7 +295,7 @@
       </div>
     </div>
   </section>
-  <h1>Mes compétences</h1>
+  <h1> Mes projets </h1>
   <section id="skills">
     <div class="skillsCard">
       <div class="skillsTitle">
@@ -290,43 +304,43 @@
       <div class="skillsContainer">
         <ul class="skillsList">
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Logo de java" />
             <h2 class="skillName">Java</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Logo de javascript"/>
             <h2 class="skillName">JavaScript</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="Logo de PHP" />
             <h2 class="skillName">Php</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="Logo de SQL"/>
             <h2 class="skillName">SQL</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="Logo de C"/>
             <h2 class="skillName">C</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="Logo de C#"/>
             <h2 class="skillName">C#</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="Logo de HTML5"/>
             <h2 class="skillName">HTML5</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="Logo de CSS3"/>
             <h2 class="skillName">CSS3</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Logo de Python"/>
             <h2 class="skillName">Python</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Logo de Bash"/>
             <h2 class="skillName">Bash</h2>
           </li>
         </ul>
@@ -339,35 +353,35 @@
       <div class="skillsContainer">
         <ul class="skillsList">
           <li>
-            <img src="https://img.icons8.com/?size=100&id=CW2UFvShbHcL&format=png&color=FFFFFF" />
+            <img src="https://img.icons8.com/?size=100&id=CW2UFvShbHcL&format=png&color=FFFFFF" alt="Logo de Symfony"/>
             <h2 class="skillName">Symfony</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Logo de Git"/>
             <h2 class="skillName">Git</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetbrains/jetbrains-original.svg" alt="Logo de Jetbrains"/>
             <h2 class="skillName">Jetbrains</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netbeans/netbeans-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netbeans/netbeans-original.svg" alt="Logo de Netbeans"/>
             <h2 class="skillName">Netbeans</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" alt="Logo de UML"/>
             <h2 class="skillName">UML</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Logo de Linux"/>
             <h2 class="skillName">Systèmes Linux</h2>
           </li>
           <li>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" alt="Logo de Visual Studio"/>
             <h2 class="skillName">Visual studio</h2>
           </li>
           <li>
-            <img src="https://img.icons8.com/?size=100&id=9qFcDV9OxuAD&format=png&color=FFFFFF" />
+            <img src="https://img.icons8.com/?size=100&id=9qFcDV9OxuAD&format=png&color=FFFFFF" alt="Logo de SCRUM"/>
             <h2 class="skillName">SCRUM</h2>
           </li>
         </ul>
@@ -387,7 +401,7 @@
       <li>
         <div class="contactCard">
           <a class="contactLink" onclick="window.open('mailto:timothe.velasco@orange.fr', '_self')" onmouseover="this.style.cursor='pointer'">
-            <img class="contactlogo" src="https://img.icons8.com/?size=100&id=53435&format=png&color=FFFFFF" />
+            <img class="contactlogo" src="https://img.icons8.com/?size=100&id=53435&format=png&color=FFFFFF" alt="Icone de mail"/>
           </a>
           <h2 class="contactName">Mail</h2>
         </div>
@@ -395,7 +409,7 @@
       <li>
         <div class="contactCard">
           <a class="contactLink" href="https://linkedin.com/in/timothé-velasco", target="_self">
-            <img class="contactlogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+            <img class="contactlogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="Logo de Linkedin"/>
           </a>
           <h2 class="contactName">Linkedin</h2>
         </div>
@@ -403,7 +417,7 @@
       <li>
         <div class="contactCard">
           <a class="contactLink" href="https://github.com/GrandeEpine", target="_self">
-            <img class="contactlogo" src="https://img.icons8.com/?size=100&id=16318&format=png&color=FFFFFF" />
+            <img class="contactlogo" src="https://img.icons8.com/?size=100&id=16318&format=png&color=FFFFFF" alt="Logo de Github"/>
           </a>
           <h2 class="contactName">GitHub</h2>
         </div>
