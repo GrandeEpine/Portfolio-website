@@ -42,10 +42,28 @@
     height: 44px;
     object-fit: contain;
 }
-
+.skillsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Nom du skill */
 .skillName {
     font-size: 0.95rem;
     margin: 0;
 }
+@media (max-width: 640px) {
+    .skillsList{
+        width: 90%;
+    }
+    .skillsList li{
+        gap: 0;
+        width: 30%;
+        height: 20%;
+        padding: 0.8rem;
+    }
+    #skills{
+        margin: 0.5rem;
+    }
 
+}

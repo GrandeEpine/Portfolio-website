@@ -35,7 +35,24 @@
 .contactName{
     margin: 0;
 }
+@media (max-width: 1000px) {
 
+    .contactList li{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    .contactList h2{
+        width: 100%;
+        font-size: 1rem;
+        padding: 1vh 0vw 1vh 0vw;
+        text-align: center;
+    }
+
+
+
+}
 
 
 

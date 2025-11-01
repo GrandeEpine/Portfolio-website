@@ -30,11 +30,19 @@ body {
   z-index: 100;
   box-shadow: #317AC1 1px 1px 1px;
 }
-
+#nameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+#menu{
+    width: 70%;
+}
 #menu ul {
   list-style: none;
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
   padding: 0;
   margin: 0;
 }
@@ -52,7 +60,9 @@ body {
   font-size: 1.2rem;
   transition: color 0.3s;
 }
-
+p {
+    text-align: center;
+}
 #menu a:hover {
   color: #00bfff;
 }
@@ -63,8 +73,16 @@ main {
   margin-top: 10vh;
   padding: 2rem;
   text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction: column;
 }
 section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   margin: 2rem;
 }
 
@@ -73,7 +91,8 @@ section{
     font-size: 10px;
   }
   #menu li{
-    width: 15vw;
+    width: fit-content;
+      padding: 5px;
   }
 
 }
@@ -94,10 +113,21 @@ section{
   }
   #header .accent{
     width: 25%;
+      font-size: 2rem;
   }
+}
+@media (min-width: 400px) {
+    #nameContainer .accent{
+        font-size: 8px;
+    }
+
 }
 /* Footer harmonisé sur la DA du header */
 .footer-min{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   /* même fond que #header */
   background-color: #16213E;
   color: #ffffff;
@@ -144,7 +174,14 @@ section{
 /* Option: réduire le cartouche en mobile */
 @media (max-width: 700px){
   .footer-min{ padding: 22px 12px 28px; }
-  .f-line1{ padding: 8px 12px; gap: .45rem; box-shadow: 4px 4px #317AC1; }
+  .f-line1{ padding: 8px 12px; gap: .45rem; box-shadow: 4px 4px #317AC1; display: block; }
+  p {
+      width: 90%;
+  }
+    section{
+        margin: 1rem;
+    }
+
 }
 #hero { scroll-margin-top: 30vh; }
 #projects   { scroll-margin-top: 20vh; }

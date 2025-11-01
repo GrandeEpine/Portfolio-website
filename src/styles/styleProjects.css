@@ -1,4 +1,5 @@
 #projects {
+    align-items: normal;
     background: #16213E;
     margin-inline: auto;
     width: 100%;
@@ -11,6 +12,7 @@
     --primary: #00bfff; --border: #317AC1;
     color: var(--ink);
     background: var(--bg);
+    padding: 0.5rem;
 }
 #projects > h1 {
     margin: 0 0 1rem;
@@ -27,15 +29,17 @@
 
 /* Carte */
 .projectCard {
+    width: 85%;
+    justify-self: center;
     display: grid;
     grid-template-rows: auto auto auto 1fr auto auto;
-    gap: .7rem;
+    gap: .2rem;
     background: #0D1A2AFF;
     border: 1px solid var(--border);
     padding: 18px;
     box-shadow: #317AC1 6px 6px 1px;
     transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
-    margin: 1vw;
+    margin-bottom: 2.5vh;
 }
 .projectCard:hover {
     transform: translateY(-2px);
@@ -190,6 +194,19 @@
 /* Mobile: réduire la hauteur */
 @media (max-width: 640px) {
     .projectImage .track img { height: 24vh; }
+    ul{
+        justify-content: center;
+    }
+    #projects{
+        width: 90%;
+        padding: 1rem;
+        justify-content: center;
+    }
+    .projectCard{
+        width: 80%;
+        justify-self: center;
+    }
+
 }
 
 
