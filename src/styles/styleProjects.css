@@ -5,7 +5,6 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: clamp(14px, 2vw, 20px);
-    border-radius: 1rem;
     justify-content: center;
     --bg: #0f1222; --card: #0f1b2d; --ink: #d7e3ff; --muted: #9ab0c9;
     --primary: #00bfff; --border: #317AC1;
@@ -16,13 +15,6 @@
     margin: 0 0 1rem;
     font-size: clamp(1.2rem, 1rem + 1.2vw, 1.8rem);
     letter-spacing: .3px;
-}
-
-@media (min-width: 700px) {
-    #projects { grid-template-columns: repeat(1, 1fr); }
-}
-@media (min-width: 1100px) {
-    #projects { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* Carte */
@@ -187,6 +179,12 @@
 }
 .projectImage .dots button[aria-current="true"] { background: var(--primary); }
 
+@media (min-width: 800px) {
+    #projects { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1200px) {
+    #projects { grid-template-columns: repeat(3, 1fr); }
+}
 /* Mobile: réduire la hauteur */
 @media (max-width: 640px) {
     .projectImage .track img { height: 24vh; }
