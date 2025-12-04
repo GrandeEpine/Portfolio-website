@@ -7,7 +7,7 @@
 /* Liste horizontale des skills */
 .skillsList {
     list-style: none;
-    margin: 0;
+    margin: 0.5rem;
     padding: 0;
 
     display: flex;

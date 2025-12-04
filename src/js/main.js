@@ -1,5 +1,81 @@
+// ============ I18N - Gestion des langues ============
+let currentLanguage = localStorage.getItem('language') || 'fr';
 
-    (function () {
+// Initialiser la langue au chargement du DOM
+document.addEventListener('DOMContentLoaded', () => {
+    // Définir la langue initiale
+    setLanguage(currentLanguage);
+
+    // Ajouter un écouteur au bouton de basculement
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', toggleLanguage);
+    }
+
+    // Initialiser le carrousel et autres fonctionnalités
+    document.querySelectorAll('[data-carousel]').forEach(initCarousel);
+});
+
+/**
+ * Définit la langue actuelle et met à jour tous les textes
+ * @param {string} lang - Code de langue ('fr' ou 'en')
+ */
+function setLanguage(lang) {
+    // Valider la langue
+    if (!translations[lang]) {
+        console.warn(`Langue '${lang}' non disponible. Utilisation du français par défaut.`);
+        lang = 'fr';
+    }
+
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    document.documentElement.lang = lang;
+
+    // Traduire tous les éléments avec data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            // Vérifier si l'élément contient des enfants (cas du greeting avec span.accent)
+            if (el.children.length > 0) {
+                // Sauvegarder les enfants
+                const children = Array.from(el.children);
+                el.textContent = translations[lang][key];
+                // Réinsérer les enfants après le texte
+                children.forEach(child => el.appendChild(child));
+            } else {
+                el.textContent = translations[lang][key];
+            }
+        }
+    });
+
+    // Mettre à jour le titre de la page
+    document.title = `Mon Portfolio - ${translations[lang]['aboutMe']}`;
+
+    // Mettre à jour le bouton de langue
+    updateLanguageButton();
+}
+
+/**
+ * Bascule entre les langues (FR ↔ EN)
+ */
+function toggleLanguage() {
+    const newLang = currentLanguage === 'fr' ? 'en' : 'fr';
+    setLanguage(newLang);
+}
+
+/**
+ * Met à jour le texte du bouton de langue
+ */
+function updateLanguageButton() {
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.textContent = currentLanguage === 'fr' ? 'EN' : 'FR';
+        langToggle.setAttribute('aria-label',
+            currentLanguage === 'fr' ? 'Switch to English' : 'Passer au Français'
+        );
+    }
+}
+(function () {
     function ready(cb) {
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', cb);

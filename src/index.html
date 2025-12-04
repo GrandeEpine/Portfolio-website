@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./styles/styleProjects.css"/>
   <link rel="stylesheet" href="./styles/styleContact.css"/>
   <script src="./js/main.js"></script>
+  <script src="./js/translations.js"></script>
+
   <title>Mon Portfolio - Accueil</title>
 </head>
 <body>
@@ -19,30 +21,32 @@
   <span class="accent">Timothé Velasco</span>
   <nav id="menu">
     <ul>
-      <li><a href="#hero" aria-label="Aller à la section Accueil">Accueil</a></li>
-      <li><a href="#projects" aria-label="Aller à la section Projets">Projets</a></li>
-      <li><a href="#skills" aria-label="Aller à la section Compétences">Compétences</a></li>
-      <li><a href="#contact" aria-label="Aller à la section Contact">Contact</a></li>
+      <li><a href="#hero" aria-label="Aller à la section Accueil" data-i18n="hubH">>Accueil</a></li>
+      <li><a href="#projects" aria-label="Aller à la section Projets" data-i18n="projectsH">>Projets</a></li>
+      <li><a href="#skills" aria-label="Aller à la section Compétences" data-i18n="skillsH">>Compétences</a></li>
+      <li><a href="#contact" aria-label="Aller à la section Contact" data-i18n="contactH">>Contact</a></li>
     </ul>
   </nav>
+  <button id="lang-toggle" class="lang-btn" aria-label="Toggle language">
+    <span class="lang-code">FR</span>
+  </button>
 </header>
 
 <main id="main">
   <section id="hero">
-    <img id="profilePicture" src="../public/img/photo.jpg" alt="Photo de profil"/>
     <div id="heroText">
       <div class="hero-row">
-        <h1>Bonjour, je m'appelle <span class="accent">Timothé Velasco</span></h1>
+        <h1 data-i18n="greeting">Bonjour, je m'appelle <span class="accent">Timothé Velasco</span></h1>
       </div>
-      <p>Je suis un développeur en 2ᵉ année de BUT informatique à
-        <a href="https://www.iut.u-bordeaux.fr/info/"> l'IUT de Bordeaux</a>.
+      <p data-i18n="subtitle">Je suis un développeur en 2ᵉ année de BUT informatique à
+        <a href="https://www.iut.u-bordeaux.fr/info/" data-i18n="place"> l'IUT de Bordeaux</a>.
       </p>
     </div>
   </section>
 
   <section class="about">
-    <h1>À propos de moi</h1>
-    <p>
+    <h1 data-i18n="aboutMe">À propos de moi</h1>
+    <p data-i18n="aboutText">
       Je suis un étudiant / développeur intéressé par le développement logiciel,
       la visualisation de données et la conception d’algorithmes.
       Ce portfolio regroupe mes projets, mes compétences et mes outils préférés que j'ai
@@ -51,18 +55,18 @@
   </section>
 
 
-  <h1 data-text="Mes créations">Mes créations</h1>
+  <h1 data-i18n="myCreations">Mes créations</h1>
   <section id="projects">
     <div class="projectCard">
       <div class="projectTitle">
-        <h2>Algorithmes de jeu de plateau</h2>
+        <h2 data-i18n="proj1Title">Algorithmes de jeu de plateau</h2>
       </div>
       <div class="projectTimeStatus">
-        <p>BUT1 | Terminé</p>
+        <p data-i18n="proj1Status">BUT1 | Terminé</p>
       </div>
 
       <div class="projectImage">
-        <h3>Aperçu:</h3>
+        <h3 data-i18n="overview">Aperçu:</h3>
         <div class="carousel" data-carousel>
           <div class="viewport">
             <div class="track">
@@ -72,16 +76,16 @@
           </div>
           <div class="dots" aria-label="Pagination"></div>
           <div class="controls">
-            <button class="nav prev" aria-label="Image précédente" data-prev>◁ Précédent</button>
-            <button class="nav next" aria-label="Image suivante" data-next>Suivant ▷</button>
+            <button class="nav prev" aria-label="Image précédente" data-prev data-i18n="previous">◁ Précédent</button>
+            <button class="nav next" aria-label="Image suivante" data-next data-i18n="next">>Suivant ▷</button>
           </div>
         </div>
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
-          <li><p>Implémentation de fonctionnalités dans un donné pour un jeu de plateau en 2D.</p></li>
-          <li><p>Test des implémentations par un script bash donné pour passer à l'implémentation suivante.</p></li>
-          <li><p> Création d'IAs suivant des algorithmes et tournoi d'IA avec celle des autres étudiants.</p></li>
+          <li><p data-i18n="proj1Desc1">>Implémentation de fonctionnalités dans un donné pour un jeu de plateau en 2D.</p></li>
+          <li><p data-i18n="proj1Desc3">>Test des implémentations par un script bash donné pour passer à l'implémentation suivante.</p></li>
+          <li><p data-i18n="proj1Desc3">> Création d'IAs suivant des algorithmes et tournoi d'IA avec celle des autres étudiants.</p></li>
         </ul>
       </div>
       <div class="projectTechTools">
@@ -92,16 +96,16 @@
         </ul>
       </div>
       <div class="projectLink"></div>
-    </div>
+    </div>  <!--projet 1 -->
     <div class="projectCard">
       <div class="projectTitle">
-        <h2>Spotify Web App — Interface musicale moderne</h2>
+        <h2 data-i18n="proj2Title">>Spotify Web App — Interface musicale moderne</h2>
       </div>
       <div class="projectTimeStatus">
-        <p>Projet personnel | En cours</p>
+        <p data-i18n="proj2Status">>Projet personnel | En cours</p>
       </div>
       <div class="projectImage">
-        <h3>Aperçu:</h3>
+        <h3 data-i18n="overview">>Aperçu:</h3>
         <div class="carousel" data-carousel>
           <div class="viewport">
             <div class="track">
@@ -111,18 +115,18 @@
           </div>
           <div class="dots" aria-label="Pagination"></div>
           <div class="controls">
-            <button class="nav prev" aria-label="Image précédente" data-prev>◁ Précédent</button>
-            <button class="nav next" aria-label="Image suivante" data-next>Suivant ▷</button>
+            <button class="nav prev" aria-label="Image précédente" data-prev data-i18n="previous">>◁ Précédent</button>
+            <button class="nav next" aria-label="Image suivante" data-next data-i18n="next">>Suivant ▷</button>
           </div>
         </div>
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
-          <li><p>Application web de gestion de playlist Spotify avec interface fidèle à l'application.</p></li>
-          <li><p>Utilise une authentification OAuth 2.0, gestion de playlists et affichage de contenu personnalisé.</p></li>
-          <li><p>Utilisation de l'API de spotify pour web et design responsive.</p></li>
-          <li><p>Création de playlist en se basant sur les genres musicaux contenus dans une playlist donnée par l'utilisateur.</p></li>
-          <li><p>Intéractions avec les playlists de l'utilisateur et personnalisation des créations de playlist.</p></li>
+          <li><p data-i18n="proj2Desc1">>Application web de gestion de playlist Spotify avec interface fidèle à l'application.</p></li>
+          <li><p data-i18n="proj2Desc2">>Utilise une authentification OAuth 2.0, gestion de playlists et affichage de contenu personnalisé.</p></li>
+          <li><p data-i18n="proj2Desc3">>Utilisation de l'API de spotify pour web et design responsive.</p></li>
+          <li><p data-i18n="proj2Desc4">>Création de playlist en se basant sur les genres musicaux contenus dans une playlist donnée par l'utilisateur.</p></li>
+          <li><p data-i18n="proj2Desc5">>Intéractions avec les playlists de l'utilisateur et personnalisation des créations de playlist.</p></li>
         </ul>
       </div>
       <div class="projectTechTools">
@@ -136,16 +140,16 @@
       <div class="projectLink">
         <a href="https://github.com/GrandeEpine/Spotify-web-app-project", target="_blank">https://github.com/GrandeEpine/Spotify-web-app-project</a>
       </div>
-    </div>
+    </div>  <!--projet 2 -->
     <div class="projectCard">
       <div class="projectTitle">
-        <h2>Visualisation de graphe</h2>
+        <h2 data-i18n="proj3Title">>Visualisation de graphe</h2>
       </div>
       <div class="projectTimeStatus">
-        <p>BUT1 | Terminé</p>
+        <p data-i18n="proj3Status">>BUT1 | Terminé</p>
       </div>
       <div class="projectImage">
-        <h3>Aperçu:</h3>
+        <h3 data-i18n="overview">>Aperçu:</h3>
         <div class="carousel" data-carousel>
           <div class="viewport">
             <div class="track">
@@ -163,13 +167,13 @@
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
-          <li><p>Implémentation de fonctionnalités de visualisation de différents types de graphe (Non dirigés et dirigés).</p></li>
-          <li><p>Création d'algorithmes de graphe tel que: Force directed, et Auto sizing.</p></li>
-          <li><p>Application de connaissances théoriques en graphe.</p></li>
-          <li><p>Application de connaissances théoriques en graphe.</p></li>
-          <li><p>Calcul de couts algorithmiques.</p></li>
-          <li><p>Approfondissement en P.O.O.</p></li>
-          <li><p>Modélisation de la structure du code avec de l'UML.</p></li>
+          <li><p data-i18n="proj3Desc1">>Implémentation de fonctionnalités de visualisation de différents types de graphe (Non dirigés et dirigés).</p></li>
+          <li><p data-i18n="proj3Desc2">>Création d'algorithmes de graphe tel que: Force directed, et Auto sizing.</p></li>
+          <li><p data-i18n="proj3Desc3">>Application de connaissances théoriques en graphe.</p></li>
+          <li><p data-i18n="proj3Desc4">>Application de connaissances théoriques en graphe.</p></li>
+          <li><p data-i18n="proj3Desc5">>Calcul de couts algorithmiques.</p></li>
+          <li><p data-i18n="proj3Desc6">>Approfondissement en P.O.O.</p></li>
+          <li><p data-i18n="proj3Desc7">>Modélisation de la structure du code avec de l'UML.</p></li>
         </ul>
       </div>
       <div class="projectTechTools">
@@ -180,29 +184,29 @@
         </ul>
       </div>
       <div class="projectLink"></div>
-    </div>
+    </div>  <!--projet 3 -->
     <div class="projectCard">
       <div class="projectTitle">
-        <h2>Développement d'application</h2>
+        <h2 data-i18n="proj4Title">>Développement d'application</h2>
       </div>
       <div class="projectTimeStatus">
-        <p>BUT1 | Terminé</p>
+        <p data-i18n="proj4Status">>BUT1 | Terminé</p>
       </div>
       <div class="projectImage">
-        <h3>Aperçu:</h3>
+        <h3 data-i18n="overview">>Aperçu:</h3>
         <img src="../public/img/SAE_S201.png" alt="Image du projet Développement d'application">
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
-          <li><p>Jeu de simulation/tower‑defense orienté objets en C#.</p></li>
-          <li><p>Implémenter sur une IHM des dialogues d’inspection, des drag‑and‑drop.</p></li>
-          <li><p>Améliorer la présentation des résultats ainsi que l'accessibilité/ergonomie.</p></li>
-          <li><p>Répartir les taches et mettre en relation l'avancement du projet avec mes camarades.</p></li>
-          <li><p>POO en C# avec conception, extension de classes, héritage, énumérations, gestion d’états de jeu et
+          <li><p data-i18n="proj4Desc1">>Jeu de simulation/tower‑defense orienté objets en C#.</p></li>
+          <li><p data-i18n="proj4Desc2">Implémenter sur une IHM des dialogues d’inspection, des drag‑and‑drop.</p></li>
+          <li><p data-i18n="proj4Desc3">Améliorer la présentation des résultats ainsi que l'accessibilité/ergonomie.</p></li>
+          <li><p data-i18n="proj4Desc4">Répartir les taches et mettre en relation l'avancement du projet avec mes camarades.</p></li>
+          <li><p data-i18n="proj4Desc5">POO en C# avec conception, extension de classes, héritage, énumérations, gestion d’états de jeu et
             invariants, en C# avec bonnes pratiques.</p></li>
-          <li><p>Versionnage du code avec GIT.</p></li>
-          <li><p>Débogage et lecture d'erreurs.</p></li>
-          <li><p>Préparation de dossier de conception visant à préparer l'implémentation des fonctionnalités demandé.</p></li>
+          <li><p data-i18n="proj4Desc6">Versionnage du code avec GIT.</p></li>
+          <li><p data-i18n="proj4Desc7">Débogage et lecture d'erreurs.</p></li>
+          <li><p data-i18n="proj4Desc8">Préparation de dossier de conception visant à préparer l'implémentation des fonctionnalités demandé.</p></li>
         </ul>
       </div>
       <div class="projectTechTools">
@@ -213,28 +217,28 @@
         </ul>
       </div>
       <div class="projectLink"></div>
-    </div>
+    </div>  <!--projet 4 -->
     <div class="projectCard">
       <div class="projectTitle">
-        <h2>Logiciel de visualisation de données</h2>
+        <h2 data-i18n="proj5Title">Logiciel de visualisation de données</h2>
       </div>
       <div class="projectTimeStatus">
-        <p>BUT1 | Terminé</p>
+        <p data-i18n="proj5Status">>BUT1 | Terminé</p>
       </div>
       <div class="projectImage">
-        <h3>Aperçu:</h3>
+        <h3 data-i18n="overview">>Aperçu:</h3>
         <img src="../public/img/dataVisu1.png" alt="Image du projet logiciel de visualisation de données">
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
-          <li><p>Application de visualisation de données environnementales développée pour une "entreprise",
+          <li><p data-i18n="proj5Desc1">>Application de visualisation de données environnementales développée pour une "entreprise",
             permettant de créer des graphiques interactifs sur les thématiques climatiques, économiques
             et démographiques.</p></li>
-          <li><p>Gestion d'équipe de 6 développeurs avec réorganisation dynamique suite à l'absence d'un membre.</p></li>
-          <li><p>Planification Gantt avec estimation temporelle et ajustement des ressources en cours de projet.</p></li>
-          <li><p>Développement d'algorithmes statistiques, manipulation de données SQL et génération de graphiques en Python.</p></li>
-          <li><p>Création d'une interface interactive permettant la sélection d'options de visualisation des données.</p></li>
-          <li><p>Conception, structuration et optimisation pour le stockage de datasets environnementaux volumineux.</p></li>
+          <li><p data-i18n="proj5Desc2">>Gestion d'équipe de 6 développeurs avec réorganisation dynamique suite à l'absence d'un membre.</p></li>
+          <li><p data-i18n="proj5Desc3">>Planification Gantt avec estimation temporelle et ajustement des ressources en cours de projet.</p></li>
+          <li><p data-i18n="proj5Desc4">>Développement d'algorithmes statistiques, manipulation de données SQL et génération de graphiques en Python.</p></li>
+          <li><p data-i18n="proj5Desc5">>Création d'une interface interactive permettant la sélection d'options de visualisation des données.</p></li>
+          <li><p data-i18n="proj5Desc6">>Conception, structuration et optimisation pour le stockage de datasets environnementaux volumineux.</p></li>
         </ul>
       </div>
       <div class="projectTechTools">
@@ -248,16 +252,16 @@
         </ul>
       </div>
       <div class="projectLink"></div>
-    </div>
-    <div class="projectCard">
+    </div>  <!--projet 5 -->
+    <div class="projectCard">  <!--projet 6 -->
       <div class="projectTitle">
-        <h2>Installation de services réseaux</h2>
+        <h2 data-i18n="proj6Title">>Installation de services réseaux</h2>
       </div>
       <div class="projectTimeStatus">
-        <p>BUT1 | Terminé</p>
+        <p data-i18n="proj6Status">>BUT1 | Terminé</p>
       </div>
       <div class="projectImage">
-        <h3>Aperçu:</h3>
+        <h3 data-i18n="overview">Aperçu:</h3>
         <div class="carousel" data-carousel>
           <div class="viewport">
             <div class="track">
@@ -267,20 +271,20 @@
           </div>
           <div class="dots" aria-label="Pagination"></div>
           <div class="controls">
-            <button class="nav prev" aria-label="Image précédente" data-prev>◁ Précédent</button>
-            <button class="nav next" aria-label="Image suivante" data-next>Suivant ▷</button>
+            <button class="nav prev" aria-label="Image précédente" data-i18n="previous"> data-prev>◁ Précédent</button>
+            <button class="nav next" aria-label="Image suivante" data-next data-i18n="next">>Suivant ▷</button>
           </div>
         </div>
       </div>
       <div class="projectDescription">
         <ul class="projectDescriptionUl">
-          <li><p>Installation et configuration de services réseaux.</p></li>
-          <li><p>Installation et configuration de clients lourds associés.</p></li>
-          <li><p>Prise en main un environnement virtuel émulant un réseau de machines sous Debian.</p></li>
-          <li><p>Configuration de l’adressage et le routage des machines dans un réseau composé de deux sous-réseaux.</p></li>
-          <li><p>Installation et configuration du serveur de fichiers Nextcloud 2, et des plugins pour ce serveur incluant
+          <li><p data-i18n="proj6Desc1">>Installation et configuration de services réseaux.</p></li>
+          <li><p data-i18n="proj6Desc2">>Installation et configuration de clients lourds associés.</p></li>
+          <li><p data-i18n="proj6Desc3">>Prise en main un environnement virtuel émulant un réseau de machines sous Debian.</p></li>
+          <li><p data-i18n="proj6Desc4">>Configuration de l’adressage et le routage des machines dans un réseau composé de deux sous-réseaux.</p></li>
+          <li><p data-i18n="proj6Desc5">>Installation et configuration du serveur de fichiers Nextcloud 2, et des plugins pour ce serveur incluant
             un système d’édition de documents Onlyoffice 3.</p></li>
-          <li><p>Rédaction d’un tutoriel détaillé en anglais au format Markdown.</p></li>
+          <li><p data-i18n="proj6Desc6">>Rédaction d’un tutoriel détaillé en anglais au format Markdown.</p></li>
         </ul>
       </div>
       <div class="projectTechTools">
@@ -295,11 +299,11 @@
       <div class="projectLink"></div>
     </div>
   </section>
-  <h1> Mes outils et compétences </h1>
+  <h1 data-i18n="toolsSkills">> Mes outils et compétences </h1>
   <section id="skills">
     <div class="skillsCard">
       <div class="skillsTitle">
-        <h2>Langages:</h2>
+        <h2 data-i18n="languages">>Langages:</h2>
       </div>
       <div class="skillsContainer">
         <ul class="skillsList">
@@ -348,7 +352,7 @@
     </div>
     <div class="skillsCard">
       <div class="skillsTitle">
-        <h2>Outils & frameworks:</h2>
+        <h2 data-i18n="tools">>Outils & frameworks:</h2>
       </div>
       <div class="skillsContainer">
         <ul class="skillsList">
@@ -388,10 +392,10 @@
       </div>
     </div>
   </section>
-  <h1>Comment me contacter ?</h1>
+  <h1 data-i18n="contact">>Comment me contacter ?</h1>
   <section id="contact">
     <section class="about">
-      <p>
+      <p data-i18n="contactDesc">>
         Je suis actuellement à la recherche d'une alternance pour l'année universitaire
         2026-2027 à partir de septembre. Je suis ouvert à toute opportunité,
         n'hésitez pas à me contacter, je serai ravi d'en discuter !
@@ -429,12 +433,12 @@
   <p class="f-line1">
     <span class="f-name">Timothé Velasco</span>
     <span class="f-sep">•</span>
-    <span class="f-availability">Cherche alternance 2026‑2027</span>
+    <span class="f-availability" data-i18n="footerDesc">>Cherche alternance 2026‑2027</span>
   </p>
   <p class="f-line2">
     © <span id="y"></span> <span class="f-owner">Timothé Velasco</span>
     <span class="f-sep">•</span>
-    <span class="f-rights">Tous droits réservés</span>
+    <span class="f-rights" data-i18n="rights">>Tous droits réservés</span>
   </p>
 </footer>
 <script>

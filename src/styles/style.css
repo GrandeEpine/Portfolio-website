@@ -85,9 +85,8 @@ section{
     flex-direction: column;
   margin: 2rem;
 }
-
 @media (max-width: 700px) {
-  #menu a{
+  #menu a, .lang-btn{
     font-size: 10px;
   }
   #menu li{
@@ -97,8 +96,11 @@ section{
 
 }
 @media (max-width: 1100px) {
-  #menu a{
+  #menu a {
     font-size: 1rem;
+  }
+  .lang-btn {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 1000px) {
@@ -107,20 +109,9 @@ section{
     padding: 0;
     margin: 0 3vw 0 0;
   }
-  .accent{
-    font-size: 1.5rem;
-  }
-  #header .accent{
-    width: 25%;
-    font-size: 3rem;
-  }
-}
-@media (min-width: 400px) {
-    #nameContainer .accent{
-        font-size: 8px;
-    }
 
 }
+
 /* Footer harmonisé sur la DA du header */
 .footer-min{
     display: flex;
@@ -186,5 +177,52 @@ section{
 #projects   { scroll-margin-top: 20vh; }
 #skills     { scroll-margin-top: 20vh; }
 #contact    { scroll-margin-top: 10vh; }
+/* Bouton de langue */
+.lang-switcher {
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.lang-code{
+  justify-self: center;
+}
+.lang-btn {
+  text-align: center;
+  color: white;
+  background-color: #0c1526;
+  border: none;
+  padding: 10px;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  width: 4%;
+  height: 40%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: #317AC1 6px 6px 1px;
+}
+
+.lang-btn:hover {
+  transform: scale(1.05);
+}
+
+.lang-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 700px) {
+  .lang-switcher {
+    top: 10px;
+    right: 10px;
+  }
+
+  .lang-btn {
+    width: 7%;
+    padding: 8px;
+    font-size: 0.7rem;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+}
 
 

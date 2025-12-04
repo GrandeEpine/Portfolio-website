@@ -7,12 +7,6 @@
     flex-direction: row;
 
 }
-#profilePicture{
-    width: 15%;
-    height: 25%;
-    padding-right: 4vw;
-
-}
 
 #heroText{
     display: flex;
@@ -28,6 +22,7 @@
     width: auto;
     font-size: 1.5rem;
     text-align: center;
+    margin-right: 5vw;
 }
 .accent {
     font-size: 3rem;
@@ -45,7 +40,6 @@
     background-color: #00bfff;
     color: white;
     padding: 0.75rem 1.5rem;
-    border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s;
 }
@@ -71,6 +65,7 @@ p a{
     margin-top: 0.5rem;
     letter-spacing: 8px;
 }
+
 @media (max-width: 1000px) {
     .accent{
         font-size: 1.2rem;
@@ -82,6 +77,15 @@ p a{
     #menu ul{
         gap: 1.5rem;
     }
+}
+@media (max-width: 600px) {
+    #header .accent{
+        font-size: 3vw;
+    }
+    #menu ul{
+        gap: 0.8rem;
+    }
+
 }
 @media (max-width: 1700px) {
     .accent{
