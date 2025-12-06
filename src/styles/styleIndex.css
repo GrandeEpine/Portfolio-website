@@ -36,6 +36,7 @@
 }
 
 .btn {
+    width: 10%;
     margin-top: 1.5rem;
     background-color: #00bfff;
     color: white;
@@ -73,17 +74,6 @@ p a{
     #header .accent{
         width: 25%;
         margin-right: 0;
-    }
-    #menu ul{
-        gap: 1.5rem;
-    }
-}
-@media (max-width: 600px) {
-    #header .accent{
-        font-size: 3vw;
-    }
-    #menu ul{
-        gap: 0.8rem;
     }
 
 }
