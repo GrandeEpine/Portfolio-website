@@ -92,19 +92,19 @@ const translations = {
         greeting: "Hello, my name is ",
         subtitle: "I'm a 2nd year developer studying for a Computer Science Bachelor at",
         place: " the University of Bordeaux",
-        aboutMe: "About Me",
+        aboutMe: "About me",
         aboutText: "I'm a student/developer interested in software development, data visualization, and algorithm design. This portfolio contains my projects, skills, and favorite tools developed during my studies or personally.",
-        myCreations: "My Projects",
+        myCreations: "My projects",
 
         // Project 1
-        proj1Title: "Board Game Algorithms",
+        proj1Title: "Board game algorithms",
         proj1Status: "2nd Year | Complete",
         proj1Desc1: "Implementation of functionalities in a 2D board game.",
         proj1Desc2: "Testing implementations with provided bash scripts for progression.",
         proj1Desc3: "Creation of AIs following algorithms and AI tournament with other students.",
 
         // Project 2
-        proj2Title: "Spotify Web App — Modern Music Interface",
+        proj2Title: "Spotify web app — modern music interface",
         proj2Status: "Personal Project | Ongoing",
         proj2Desc1: "Web application for managing Spotify playlists with interface faithful to the app.",
         proj2Desc2: "Uses OAuth 2.0 authentication, playlist management, and personalized content display.",
@@ -113,7 +113,7 @@ const translations = {
         proj2Desc5: "Interactions with user playlists and customization of playlist creations.",
 
         // Project 3
-        proj3Title: "Graph Visualization",
+        proj3Title: "Graph visualization",
         proj3Status: "2nd Year | Complete",
         proj3Desc1: "Implementation of visualization features for different graph types (directed and undirected).",
         proj3Desc2: "Creation of graph algorithms such as: Force directed and Auto sizing.",
@@ -124,7 +124,7 @@ const translations = {
         proj3Desc7: "Code structure modeling with UML.",
 
         // Project 4
-        proj4Title: "Application Development",
+        proj4Title: "Application development",
         proj4Status: "2nd Year | Complete",
         proj4Desc1: "Object-oriented simulation/tower-defense game in C#.",
         proj4Desc2: "Implementation on GUI of inspection dialogs and drag-and-drop features.",
@@ -136,7 +136,7 @@ const translations = {
         proj4Desc8: "Preparation of design documentation aiming to prepare the implementation of requested functionalities.",
 
         // Project 5
-        proj5Title: "Data Visualization Software",
+        proj5Title: "Data visualization software",
         proj5Status: "2nd Year | Complete",
         proj5Desc1: "Environmental data visualization application developed for a \"company\", allowing the creation of interactive graphics on climate, economic and demographic topics.",
         proj5Desc2: "Management of a 6-developer team with dynamic reorganization following a member's absence.",
@@ -146,7 +146,7 @@ const translations = {
         proj5Desc6: "Design, structuring and optimization for storing large environmental datasets.",
 
         // Project 6
-        proj6Title: "Network Services Installation",
+        proj6Title: "Network services installation",
         proj6Status: "2nd Year | Complete",
         proj6Desc1: "Installation and configuration of network services.",
         proj6Desc2: "Installation and configuration of associated heavy clients.",
@@ -159,10 +159,10 @@ const translations = {
         overview: "Overview:",
         previous: "◁ Previous",
         next: "Next ▷",
-        toolsSkills: "My Tools and Skills",
+        toolsSkills: "My tools and skills",
         languages: "Languages:",
         tools: "Tools & frameworks:",
-        contact: "How to Contact Me?",
+        contact: "How to contact me?",
         contactDesc: "I'm currently looking for an internship for the 2026-2027 academic year starting in September. I'm open to any opportunity, feel free to contact me, I'd be happy to discuss it!",
         footerDesc: "Seeking internship 2026-2027",
         rights: "All rights reserved"

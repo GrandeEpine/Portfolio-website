@@ -1,23 +1,24 @@
 /* Carte Compétences */
 .skillsCard {
+    width: 90%;
     background-color: #0f1222;
     margin: 1rem;
     padding-bottom: 2rem;
 }
-/* Liste horizontale des skills */
+
 .skillsList {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 16px 20px;
+
     list-style: none;
     margin: 0.5rem;
     padding: 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 20px;
-    align-items: center;
-    justify-content: center;
 }
 
-/* Élément (logo + nom) */
 .skillsList li {
     display: flex;
     flex-direction: column;
