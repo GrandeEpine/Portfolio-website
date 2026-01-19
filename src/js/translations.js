@@ -97,11 +97,17 @@ const translations = {
         myCreations: "My projects",
 
         // Project 1
-        proj1Title: "Board game algorithms",
+        proj1Title: "Robot Football Tournament Manager — PWA",
         proj1Status: "2nd Year | Complete",
-        proj1Desc1: "Implementation of functionalities in a 2D board game.",
-        proj1Desc2: "Testing implementations with provided bash scripts for progression.",
-        proj1Desc3: "Creation of AIs following algorithms and AI tournament with other students.",
+        proj1Desc1: "Development of a Progressive Web App for organizing robot football competitions, from team registration to results publication.",
+        proj1Desc2: "Design and implementation of a relational database: teams, robots, matches, rankings, results.",
+        proj1Desc3: "Symfony framework implementation for business logic and application workflow management.",
+        proj1Desc4: "Team management with registration, validation and dynamic roster editing.",
+        proj1Desc5: "Match bracket system and automatic tournament organization.",
+        proj1Desc6: "Real-time results publication and live rankings after each competition.",
+        proj1Desc7: "Responsive UI and PWA accessibility (offline-first, installable on mobile/tablet).",
+        proj1Desc8: "Agile team collaboration, task tracking and iterations based on Product Owner feedback.",
+
 
         // Project 2
         proj2Title: "Spotify web app — modern music interface",
