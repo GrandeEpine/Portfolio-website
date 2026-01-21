@@ -21,25 +21,34 @@
 #header .accent {
     width: auto;
     font-size: 1.5rem;
-    text-align: center;
     margin-right: 5vw;
+    height: 100%;
+    display: inline-grid;
+    place-items: center;
+    text-align: center;
 }
 .accent {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-family: 'Kumar One';
     color: #00bfff;
+    display: inline-grid;
+    place-items: center;
+    text-align: center;
+    line-height: 1;
 }
 
 #hero p {
     max-width: 600px;
     color: #c2bdbd;
 }
+
 #profilePicture{
     width: 15%;
     height: 25%;
     padding-right: 4vw;
 
 }
+
 .btn {
     width: 10%;
     margin-top: 1.5rem;
@@ -87,8 +96,9 @@ p a{
         font-size: 1.6rem;
     }
 }
+
 @media (max-width: 700px) {
-    #profilePicture{
-        display: none;
+    #profilePicture, .accent, #header .accent{
+        display: none !important;
     }
 }

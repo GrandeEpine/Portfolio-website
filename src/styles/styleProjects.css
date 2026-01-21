@@ -185,7 +185,36 @@
     cursor: pointer;
 }
 .projectImage .dots button[aria-current="true"] { background: var(--primary); }
+/*
+Source - https://stackoverflow.com/a
+Posted by PsiKai, modified by community. See post 'Timeline' for change history
+Retrieved 2026-01-21, License - CC BY-SA 4.0
+*/
 
+/* BEGIN ANIMATION STYLES */
+.box{
+    cursor: pointer;
+}
+.full-screen {
+    position: fixed;
+    animation: go-full-screen forwards 500ms ease-in-out;
+    inset: var(--inset);
+}
+
+.shrink-down {
+    animation: go-full-screen reverse backwards 500ms ease-in-out !important;
+}
+
+@keyframes go-full-screen {
+    from {
+        inset: var(--inset);
+    }
+    to {
+        height: 100%;
+        width: 100%;
+        inset: 0;
+    }
+}
 @media (min-width: 800px) {
     #projects { grid-template-columns: repeat(2, 1fr); }
 }
