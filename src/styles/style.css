@@ -24,6 +24,44 @@
   cursor: zoom-out;
 }
 
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #317AC1;
+  background: #1A1A2E;
+  color: #cfe6ff;
+  font-size: 2rem;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: #317AC1 2px 2px 1px;
+  transition: transform .1s ease, border-color .15s ease, color .15s ease;
+  z-index: 10000;
+}
+
+.lightbox-nav:hover {
+  border-color: #6a6abb;
+  color: #eafffb;
+}
+
+.lightbox-nav:active {
+  transform: translateY(-50%) scale(.96);
+}
+
+.lightbox-nav:focus-visible {
+  outline: 2px solid #00bfff;
+  outline-offset: 2px;
+}
+
+.lightbox-prev {
+  left: 2rem;
+}
+
+.lightbox-next {
+  right: 2rem;
+}
+
 body.lightbox-open {
   overflow: hidden;
 }
