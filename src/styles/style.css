@@ -262,7 +262,7 @@ section{
 /* Accents (mêmes teintes que sur le site) */
 .f-name{
   /* si tu utilises New Rocker pour les titres */
-  font-family: "Julius Sans One", system-ui, sans-serif;
+  font-family: 'Kumar One';
   color: #00bfff;
   letter-spacing: .5px;
 }

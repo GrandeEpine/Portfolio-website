@@ -14,11 +14,16 @@ const translations = {
         myCreations: "Mes créations",
 
         // Projet 1
-        proj1Title: "Algorithmes de jeu de plateau",
-        proj1Status: "BUT1 | Terminé",
-        proj1Desc1: "Implémentation de fonctionnalités dans un donné pour un jeu de plateau en 2D.",
-        proj1Desc2: "Test des implémentations par un script bash donné pour passer à l'implémentation suivante.",
-        proj1Desc3: "Création d'IAs suivant des algorithmes et tournoi d'IA avec celle des autres étudiants.",
+        proj1Title: "Gestionnaire de tournoi de football robotique — PWA",
+        proj1Status: "BUT2 | Terminé",
+        proj1Desc1: "Développement d'une Progressive Web App (PWA) pour organiser des compétitions de football robotique, de l'inscription des équipes, la création des différents types de tournois à l'affichage des résultats.",
+        proj1Desc2: "Conception d'une base de donnée en continu avec tests d'intégrités en Python.",
+        proj1Desc3: "Développement complet du backend avec le framework Symfony.",
+        proj1Desc4: "Gestion d'équipes avec inscription, validation et édition dynamique des équipes.",
+        proj1Desc5: "Système de bracket, calendrier et créneaux horaires des matchs pour organiser les compétitions.",
+        proj1Desc6: "Interface utilisateur responsive et accessibilité PWA.",
+        proj1Desc7: "Collaboration en équipe AGILE, suivi des tâches et cycles d'itérations courts basés sur les retours du product owner.",
+        proj1Desc8: "Utilisation d'un board GitLab pour la réalisation des User Stories.",
 
         // Projet 2
         proj2Title: "Spotify Web App — Interface musicale moderne",
@@ -80,8 +85,10 @@ const translations = {
         languages: "Langages:",
         tools: "Outils & frameworks:",
         contact: "Comment me contacter ?",
-        contactDesc: "Je suis actuellement à la recherche d'une alternance pour l'année universitaire 2026-2027 à partir de septembre. Je suis ouvert à toute opportunité, n'hésitez pas à me contacter, je serai ravi d'en discuter !",
-        footerDesc: "Cherche alternance 2026-2027",
+        contactDesc: "Je suis actuellement à la recherche d'une alternance pour l'année universitaire\n" +
+            "        2026-2027 à partir de juillet. Je recherche principalement du full stack mais je suis ouvert à d'autres opportunités dans le développement logiciel.\n" +
+            "        N'hésitez pas à me contacter, je serai ravi d'en discuter !",
+        footerDesc: "Recherche alternance en full stack 2026‑2027",
         rights: "Tous droits réservés"
     },
     en: {
@@ -99,15 +106,14 @@ const translations = {
         // Project 1
         proj1Title: "Robot Football Tournament Manager — PWA",
         proj1Status: "2nd Year | Complete",
-        proj1Desc1: "Development of a Progressive Web App for organizing robot football competitions, from team registration to results publication.",
-        proj1Desc2: "Design and implementation of a relational database: teams, robots, matches, rankings, results.",
-        proj1Desc3: "Symfony framework implementation for business logic and application workflow management.",
-        proj1Desc4: "Team management with registration, validation and dynamic roster editing.",
-        proj1Desc5: "Match bracket system and automatic tournament organization.",
-        proj1Desc6: "Real-time results publication and live rankings after each competition.",
-        proj1Desc7: "Responsive UI and PWA accessibility (offline-first, installable on mobile/tablet).",
-        proj1Desc8: "Agile team collaboration, task tracking and iterations based on Product Owner feedback.",
-
+        proj1Desc1: "Development of a Progressive Web App (PWA) to organize robotic football competitions, from team registration, creation of different types of tournaments to displaying results.",
+        proj1Desc2: "Design of a continuous database with integrity testing in Python.",
+        proj1Desc3: "Complete backend development using the Symfony framework.",
+        proj1Desc4: "Team management with dynamic team registration, validation and editing.",
+        proj1Desc5: "Bracket system, schedule and match time slots to organize competitions.",
+        proj1Desc6: "Responsive user interface and accessibility PWA.",
+        proj1Desc7: "Collaboration in an AGILE team, monitoring of tasks and short iteration cycles based on feedback from the product owner.",
+        proj1Desc8: "Using a GitLab board for the creation of User Stories.",
 
         // Project 2
         proj2Title: "Spotify web app — modern music interface",
@@ -169,8 +175,10 @@ const translations = {
         languages: "Languages:",
         tools: "Tools & frameworks:",
         contact: "How to contact me?",
-        contactDesc: "I'm currently looking for an internship for the 2026-2027 academic year starting in September. I'm open to any opportunity, feel free to contact me, I'd be happy to discuss it!",
-        footerDesc: "Seeking internship 2026-2027",
+        contactDesc: "I am currently looking for a work-study placement for the 2026-2027 academic year, starting in July. I am primarily interested in full-stack development, but I am open to other opportunities in software development.\n" +
+            "\n" +
+            "Please feel free to contact me; I would be happy to discuss them!",
+        footerDesc: "Looking for a full-stack apprenticeship 2026-2027",
         rights: "All rights reserved"
     }
 };
